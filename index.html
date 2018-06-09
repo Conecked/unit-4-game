@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collectors!</title>
+    <link rel="styelsheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Crystal Collectors!</h1>
+            <br>
+            <ul>
+                <li>You will be given a random number at the start of the game.</li>
+                <li>There are four crystlas below. By clicking on a crystal you will add a specific amount of points to your
+                    total score.
+                </li>
+                <li>You win the game by matching your total score with that of the random number, you lose the game if your total
+                    score goes over the random number.
+                </li>
+                <li>The value of each gem is hidden from you until you click on it.</li>
+                <li>Each time the game starts, the game will change the value of each crystal.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="holder">
+        <div class="number"></div>
+        <div class="scoreboard">
+            <div class="alert"></div>
+            <p class="wins">Wins: 0</p>
+            <p class="losses">Losses: 0</p>
+        </div>
+    </div>
+    <div class="crystalContainer">
+        <img src="assets/images/blue_gem_diamond_jewel.png" height="200" width="200" id="blue" class="button">
+        <img src="assets/images/Citrine.png" height="200" width="200" id="citrine" class="button">
+        <img src="assets/images/crystal.png" height="200" width="200" id="crystal" class="button">
+        <img src="assets/images/ruby.png" height="200" width="200" id="ruby" class="button">
+    </div>
+    <div class="userScoreboard">
+        <div class="userScoreTitle" text-align="center">Your total score is:</div>
+        <div class="userValue"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
