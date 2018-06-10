@@ -5,7 +5,7 @@ let userTotal = 0;
 
 // have random number populate "number" box
 function displayRandomNumber() {
-    $(".number").html("<h3>" + randomNumber + "</h3>");
+    $("#number").html("<h3>" + randomNumber + "</h3>");
 }
 
 displayRandomNumber();
@@ -47,7 +47,7 @@ $("#ruby").on("click", getCrystalValue(4));
 function reset() {
     randomNumber = Math.floor(Math.random() * 102) + 19;
     console.log(randomNumber);
-    $(".number").html("<h3>" + randomNumber + "</h3>");
+    $("#number").html("<h3>" + randomNumber + "</h3>");
     randomCrystal[1] = Math.floor(Math.random() * 12) + 1;
     randomCrystal[2] = Math.floor(Math.random() * 12) + 1;
     randomCrystal[3] = Math.floor(Math.random() * 12) + 1;
@@ -64,7 +64,7 @@ $(".wins").text("Wins: " + wins);
 $(".losses").text("Losses: " + losses);
 
 function winner() {
-    $(".alert").html("You Won!");
+    $("#alert").html("You Won!");
     wins++;
     $(".wins").text("Wins: " + wins);
     reset();
@@ -73,7 +73,7 @@ function winner() {
 // tally a loss if user goes over the random number
 
 function loser() {
-    $(".alert").html("You Loss!");
+    $("#alert").html("You Loss!");
     losses++;
     $(".losses").text("Losses: " + losses);
     reset();
