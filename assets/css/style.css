@@ -30,15 +30,13 @@ h6 {
 }
 
 #crystalContainer {
-    display: flex;
-    margin: 0 auto;
     margin-top: 25px;
     justify-content: center;
 }
 
 .col-sm {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
 
 #number {
