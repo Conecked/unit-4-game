@@ -53,7 +53,7 @@ function reset() {
     randomCrystal[3] = Math.floor(Math.random() * 12) + 1;
     randomCrystal[4] = Math.floor(Math.random() * 12) + 1;
     userTotal = 0;
-    $(".userValue").text(userTotal);
+    $(".userValue").text(userTotal);    
 }
 
 // tally a win on scoreboard if user can equal random number

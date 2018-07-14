@@ -32,29 +32,42 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col col-md-2" id="number"></div>
-            <div class="col-md-auto"></div>
-            <div class="col col-md-2" id="scoreboard">
+    <div class="container" id="scoreboardContainer">
+        <div class="row justify-content-center">
+            <div class="col-lg"></div>
+            <div class="col-md mr-3" id="number"></div>
+            <!-- <div class="col-lg-auto"></div> -->
+            <div class="col-md ml-3" id="scoreboard">
                 <h4 style="color: red;" id="alert"></h4>
                 <h5 class="wins">Wins: 0</h5>
                 <h5 class="losses">Losses: 0</h5>
             </div>
+            <div class="col-lg"></div>
         </div>
     </div>
     <div class="container">
         <div class="row" id="crystalContainer">
-            <img src="assets/images/blue_gem_diamond_jewel.png" id="blue" class="col-sm">
-            <img src="assets/images/Citrine.png" id="citrine" class="col-sm">
-            <img src="assets/images/crystal.png" id="crystal" class="col-sm">
-            <img src="assets/images/ruby.png" id="ruby" class="col-sm">
+            <div class="col-lg"></div>
+            <div class="col-lg"></div>
+            <div class="col-xm">
+                <img src="assets/images/blue_gem_diamond_jewel.png" id="blue" height="175px">
+            </div>
+            <div class="col-xm">
+                <img src="assets/images/Citrine.png" id="citrine" height="175px">
+            </div>
+            <div class="col-xm">
+                <img src="assets/images/crystal.png" id="crystal" height="175px">
+            </div>
+            <div class="col-xm">
+                <img src="assets/images/ruby.png" id="ruby" height="175px">
+            </div>
+            <div class="col-lg"></div>
+            <div class="col-lg"></div>
         </div>
-        <div class="mx-auto" style="width: 200px;" id="userScoreboard">
+        <div class="mx-auto" style="width: 175px;" id="userScoreboard">
             <div class="userScoreTitle" text-align="center">Your total score is:</div>
             <div class="userValue" text-align="center"></div>
         </div>
-    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
